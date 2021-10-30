@@ -1,70 +1,69 @@
 {
-  "author": "Stefan Hagen <stefan@hagen.link> (https://stefan-hagen.website/)",
-  "bugs": {
-    "url" : "https://github.com/sthagen/example-electron-playwright/issues"
-  },
-  "description": "Simple example for enaabling test of an electron application per playwright.",
-  "homepage": "https://sthagen.github.io/example-electron-playwright/",
-  "keywords": [
-    "developer-tools",
-    "electron",
-    "example",
-    "playwright",
-    "test-tools"
-  ],
-  "license": "MIT",
-  "main": "main.js",
-  "name": "example-electron-playwright",
-  "private": true,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sthagen/example-electron-playwright.git"
-  }
-  "version": "2021.10.30",
-  "scripts": {
-    "start": "electron-forge start",
-    "test": "node playwright.js",
-    "package": "electron-forge package",
-    "make": "electron-forge make"
-  },
-  "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.61",
-    "@electron-forge/maker-deb": "^6.0.0-beta.61",
-    "@electron-forge/maker-rpm": "^6.0.0-beta.61",
-    "@electron-forge/maker-squirrel": "^6.0.0-beta.61",
-    "@electron-forge/maker-zip": "^6.0.0-beta.61",
-    "electron": "^15.3.0",
-    "electron-chromedriver": "^15.0.0",
-    "playwright": "^1.16.2"
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
-  },
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "my_electron_app"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
-        }
-      ]
-    }
-  }
+	"author": "Stefan Hagen <stefan@hagen.link> (https://stefan-hagen.website/)",
+	"bugs": {
+		"url": "https://github.com/sthagen/example-electron-playwright/issues"
+	},
+	"description": "Simple example for enaabling test of an electron application per playwright.",
+	"homepage": "https://sthagen.github.io/example-electron-playwright/",
+	"keywords": [
+		"developer-tools",
+		"electron",
+		"example",
+		"playwright",
+		"test-tools"
+	],
+	"license": "MIT",
+	"main": "main.js",
+	"name": "example-electron-playwright",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sthagen/example-electron-playwright.git"
+	},
+	"version": "2021.10.30",
+	"scripts": {
+		"start": "electron-forge start",
+		"test": "node playwright.js",
+		"package": "electron-forge package",
+		"make": "electron-forge make"
+	},
+	"devDependencies": {
+		"@electron-forge/cli": "^6.0.0-beta.61",
+		"@electron-forge/maker-deb": "^6.0.0-beta.61",
+		"@electron-forge/maker-rpm": "^6.0.0-beta.61",
+		"@electron-forge/maker-squirrel": "^6.0.0-beta.61",
+		"@electron-forge/maker-zip": "^6.0.0-beta.61",
+		"electron": "^15.3.0",
+		"electron-chromedriver": "^15.0.0",
+		"playwright": "^1.16.2"
+	},
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.0"
+	},
+	"config": {
+		"forge": {
+			"packagerConfig": {},
+			"makers": [{
+					"name": "@electron-forge/maker-squirrel",
+					"config": {
+						"name": "my_electron_app"
+					}
+				},
+				{
+					"name": "@electron-forge/maker-zip",
+					"platforms": [
+						"darwin"
+					]
+				},
+				{
+					"name": "@electron-forge/maker-deb",
+					"config": {}
+				},
+				{
+					"name": "@electron-forge/maker-rpm",
+					"config": {}
+				}
+			]
+		}
+	}
 }
