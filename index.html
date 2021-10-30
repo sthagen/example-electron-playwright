@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang=en>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <title>Find me in test.</title>
-  </head>
-  <body>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
     <h1>Another special target for test.</h1>
-    W<span id="umlaut-target">ü</span> build on Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <p>Current theme source: <strong id="theme-source">System</strong></p>
 
-    <script src="./renderer.js"></script>
+    <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    <button id="reset-to-system">Reset to System Theme</button>
+  
+    <p id="env-info">W<span id="umlaut-target">ü</span> build on Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+      and Electron <span id="electron-version"></span>.</p>
+
+    <script src="renderer.js"></script>
   </body>
+</body>
 </html>
