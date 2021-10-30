@@ -104,3 +104,4 @@ dist
 .tern-port
 example.png
 package-lock.json
+out/
