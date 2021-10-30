@@ -4,7 +4,7 @@
     "url" : "https://github.com/sthagen/example-electron-playwright/issues"
   },
   "description": "Simple example for enaabling test of an electron application per playwright.",
-  "homepage": "https://sthagen.github.io/example-electron-playwright/
+  "homepage": "https://sthagen.github.io/example-electron-playwright/",
   "keywords": [
     "developer-tools",
     "electron",
