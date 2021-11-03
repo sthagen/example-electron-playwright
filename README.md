@@ -4,6 +4,6 @@ Simple example project showing electron test per playwright.
 
 ## Status
 
-Experimental.
+Protoype.
 
 **Note**: The default branch is `default`.
