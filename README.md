@@ -1,4 +1,4 @@
-# example-electron-playwright
+# Example-electron-playwright
 
 Simple example project showing electron test using playwright.
 
